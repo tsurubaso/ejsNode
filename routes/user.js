@@ -1,10 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/users", (req, res) => {
+router.get("/", (req, res) => {
   res.send("User List");
 });
 
-router.get("/users/new", (req, res) => {
+router.get("/new", (req, res) => {
   res.send("User new form");
 });
+
+module.exports=router
