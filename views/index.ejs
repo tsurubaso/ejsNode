@@ -7,6 +7,6 @@
     <title>Ejs training avec l'anglais</title>
   </head>
   <body>
-    <h1>test <%= text %></h1>
+    <h1>test <%= locals.text || "default" %></h1>
   </body>
 </html>
